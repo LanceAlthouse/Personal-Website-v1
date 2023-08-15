@@ -16,20 +16,28 @@ const LeftColumn = () => {
       </div>
       <Navbar />
       <div className="pt-16 flex flex-row gap-6">
-        <button>
+        <a
+          href="https://github.com/Lancealot4567"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src={GithubLogo}
             alt="github_logo"
             className="invert w-8 h-8 hover:drop-shadow-green"
           ></img>
-        </button>
-        <button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lance-althouse/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src={LinkedInLogo}
             alt="linkedin_logo"
             className="invert w-8 h-8"
           ></img>
-        </button>
+        </a>
       </div>
     </div>
   );
