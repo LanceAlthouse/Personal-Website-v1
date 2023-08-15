@@ -5,11 +5,11 @@ import RightColumn from "./components/RightColumn/RightColumn";
 function App() {
   return (
     <div className="App">
-      <div className="grid grid-cols-7">
+      <div className="grid grid-cols-11">
         <div className="col-span-2">
           <LeftColumn />
         </div>
-        <div className="col-span-5">
+        <div className="col-span-9">
           <RightColumn />
         </div>
       </div>
