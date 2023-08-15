@@ -10,6 +10,7 @@ const LeftColumn = () => {
       <div className="pt-16">
         <img
           className="h-64 w-64 border-4 border-green-600 rounded-full"
+          alt="profile_picture"
           src={ProfilePicture}
         ></img>
       </div>
@@ -18,11 +19,16 @@ const LeftColumn = () => {
         <button>
           <img
             src={GithubLogo}
+            alt="github_logo"
             className="invert w-8 h-8 hover:drop-shadow-green"
           ></img>
         </button>
         <button>
-          <img src={LinkedInLogo} className="invert w-8 h-8"></img>
+          <img
+            src={LinkedInLogo}
+            alt="linkedin_logo"
+            className="invert w-8 h-8"
+          ></img>
         </button>
       </div>
     </div>

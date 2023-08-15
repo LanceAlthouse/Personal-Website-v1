@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Element, scroll, Button } from "react-scroll";
+//import { Link, Element, scroll, Button } from "react-scroll";
 
 const Navbar = () => {
   return (
