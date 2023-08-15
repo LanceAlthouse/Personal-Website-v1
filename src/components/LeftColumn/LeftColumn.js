@@ -24,7 +24,7 @@ const LeftColumn = () => {
           <img
             src={GithubLogo}
             alt="github_logo"
-            className="invert w-8 h-8 hover:drop-shadow-green"
+            className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
           ></img>
         </a>
         <a
@@ -35,9 +35,13 @@ const LeftColumn = () => {
           <img
             src={LinkedInLogo}
             alt="linkedin_logo"
-            className="invert w-8 h-8"
+            className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
           ></img>
         </a>
+      </div>
+      <div className="pt-48 text-center">
+        <p className="text-white">&#169; 2023 Lance Althouse</p>
+        <p className="text-white">All rights reserved.</p>
       </div>
     </div>
   );
