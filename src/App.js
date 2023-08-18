@@ -8,10 +8,10 @@ function App() {
     <Router>
       <div className="App">
         <div className="grid grid-cols-11">
-          <div className="col-span-2">
+          <div className="hidden sm:block col-span-2">
             <LeftColumn />
           </div>
-          <div className="col-span-9">
+          <div className="col-span-11 sm:col-span-9">
             <RightColumn />
           </div>
         </div>

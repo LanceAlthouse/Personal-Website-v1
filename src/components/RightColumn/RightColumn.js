@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import AboutMeSection from "../AboutMeSection/AboutMeSection";
 import Projects from "../ProjectsSection/ProjectsSection";
 import ContactSection from "../ContactSection/ContactSection";
+import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
 const RightColumn = () => {
   const location = useLocation();
@@ -22,8 +23,13 @@ const RightColumn = () => {
   }
 
   return (
-    <div className="bg-zinc-900 min-h-screen min-w-max overflow-auto whitespace-normal overflow-x-hidden">
-      {content}
+    <div className="bg-zinc-900 min-h-screen">
+      <div className="md:hidden sm:hidden">
+        <MobileNavbar/>
+      </div>
+      <div className="overflow-hidden">
+        {content}
+      </div>
     </div>
   );
 };
