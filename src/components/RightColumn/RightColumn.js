@@ -27,7 +27,9 @@ const RightColumn = () => {
       <div className="md:hidden sm:hidden">
         <MobileNavbar />
       </div>
-      <div className="overflow-hidden">{content}</div>
+      <div className="max-h-screen overflow-y-scroll overflow-hidden">
+        {content}
+      </div>
     </div>
   );
 };

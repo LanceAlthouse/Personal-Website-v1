@@ -39,9 +39,8 @@ const LeftColumn = () => {
           ></img>
         </a>
       </div>
-      <div className="pt-48 text-center">
+      <div className="pt-52 text-center">
         <p className="text-white">&#169; 2023 Lance Althouse</p>
-        <p className="text-white">All rights reserved.</p>
       </div>
     </div>
   );
