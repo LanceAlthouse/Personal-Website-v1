@@ -1,5 +1,7 @@
 import {React} from "react";
 import ProfilePicture from "../../assets/images/profile_picture_circular.png";
+import LinkedInLogo from "../../assets/images/linkedin_logo.png";
+import GithubLogo from "../../assets/images/github_logo.png";
 import Navbar from "../Navbar/Navbar";
 
 const MobileNavbar = () => {
@@ -13,6 +15,30 @@ const MobileNavbar = () => {
         ></img>
       </div>
       <Navbar/>
+      <div className="pt-16 pb-16 flex flex-row gap-6 items-center justify-center">
+        <a
+          href="https://github.com/Lancealot4567"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={GithubLogo}
+            alt="github_logo"
+            className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
+          ></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lance-althouse/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={LinkedInLogo}
+            alt="linkedin_logo"
+            className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
+          ></img>
+        </a>
+      </div>
     </div>
   );
 };
