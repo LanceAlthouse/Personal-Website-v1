@@ -25,11 +25,9 @@ const RightColumn = () => {
   return (
     <div className="bg-zinc-900 min-h-screen">
       <div className="md:hidden sm:hidden">
-        <MobileNavbar/>
+        <MobileNavbar />
       </div>
-      <div className="overflow-hidden">
-        {content}
-      </div>
+      <div className="overflow-hidden">{content}</div>
     </div>
   );
 };

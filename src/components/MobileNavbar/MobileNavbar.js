@@ -1,4 +1,4 @@
-import {React} from "react";
+import { React } from "react";
 import ProfilePicture from "../../assets/images/profile_picture_circular.png";
 import LinkedInLogo from "../../assets/images/linkedin_logo.png";
 import GithubLogo from "../../assets/images/github_logo.png";
@@ -14,7 +14,7 @@ const MobileNavbar = () => {
           src={ProfilePicture}
         ></img>
       </div>
-      <Navbar/>
+      <Navbar />
       <div className="pt-16 pb-16 flex flex-row gap-6 items-center justify-center">
         <a
           href="https://github.com/Lancealot4567"

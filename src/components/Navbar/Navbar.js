@@ -7,8 +7,8 @@ const Navbar = () => {
   const currentPath = location.pathname;
 
   return (
-    <ul className="pt-16 outline-2 outline-green-600 grid grid-cols-1 grid-rows-4 gap-5 text-center text-white">
-      <li className="text-2xl font-serif font-medium hover:text-green-600 ease-in duration-300 hover:scale-110">
+    <ul className="pt-16 outline-2 outline-green-600 grid grid-cols-1 grid-rows-4 gap-5 text-center text-2xl text-white font-mono font-medium Consolas">
+      <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/" && (
           <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
@@ -19,7 +19,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className=" text-2xl font-serif font-medium hover:text-green-600 ease-in duration-300 hover:scale-110">
+      <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/aboutme" && (
           <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
@@ -32,7 +32,7 @@ const Navbar = () => {
           About Me
         </NavLink>
       </li>
-      <li className="text-2xl font-serif font-medium hover:text-green-600 ease-in duration-300 hover:scale-110">
+      <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/projects" && (
           <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
@@ -45,7 +45,7 @@ const Navbar = () => {
           Projects
         </NavLink>
       </li>
-      <li className="text-2xl font-serif font-medium hover:text-green-600 ease-in duration-300 hover:scale-110">
+      <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/contact" && (
           <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
