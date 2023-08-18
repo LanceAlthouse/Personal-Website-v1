@@ -7,7 +7,7 @@ const Navbar = () => {
   const currentPath = location.pathname;
 
   return (
-    <ul className="pt-16 outline-2 outline-green-600 grid grid-cols-1 grid-rows-4 gap-5 text-center text-white overflow-hidden">
+    <ul className="pt-16 outline-2 outline-green-600 grid grid-cols-1 grid-rows-4 gap-5 text-center text-white">
       <li className="text-2xl font-serif font-medium hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/" && (
           <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
