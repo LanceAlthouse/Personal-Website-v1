@@ -23,7 +23,7 @@ const RightColumn = () => {
   }
 
   return (
-    <div className="bg-zinc-900 min-h-screen">
+    <div className="bg-zinc-900 h-full">
       <div className="md:hidden sm:hidden">
         <MobileNavbar />
       </div>

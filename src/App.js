@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="grid grid-cols-11">
+        <div className="grid grid-cols-11 h-screen">
           <div className="hidden sm:block col-span-2">
             <LeftColumn />
           </div>
