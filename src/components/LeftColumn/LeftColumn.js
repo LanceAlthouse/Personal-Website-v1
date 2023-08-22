@@ -25,6 +25,7 @@ const LeftColumn = () => {
             src={GithubLogo}
             alt="github_logo"
             className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
+            title="View my Github page"
           ></img>
         </a>
         <a
@@ -36,6 +37,7 @@ const LeftColumn = () => {
             src={LinkedInLogo}
             alt="linkedin_logo"
             className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
+            title="View my LinkedIn page"
           ></img>
         </a>
       </div>
