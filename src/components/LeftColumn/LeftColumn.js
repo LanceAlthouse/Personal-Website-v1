@@ -7,12 +7,14 @@ import Navbar from "../Navbar/Navbar";
 const LeftColumn = () => {
   return (
     <div className="h-full flex flex-col items-center bg-zinc-950 font-mono font-medium Consolas">
-      <div className="pt-16">
-        <img
-          className="lg:h-64 lg:w-64 sm:h-24 sm:w-24 md:h-32 md:w-32 border-4 border-green-600 rounded-full"
-          alt="profile_picture"
-          src={ProfilePicture}
-        ></img>
+      <div className="pt-16 flex justify-center items-center object-fill">
+        <div className="relative 2xl:w-64 2xl:h-64 lg:w-48 lg:h-48 md:h-32 md:w-32 sm:h-24 sm:w-24 border-4 border-green-600 rounded-full">
+          <img
+            className="w-full h-full object-cover"
+            alt="profile_picture"
+            src={ProfilePicture}
+          ></img>
+        </div>
       </div>
       <Navbar />
       <div className="pt-16 flex flex-row gap-6">
