@@ -5,6 +5,7 @@ import AboutMeSection from "../AboutMeSection/AboutMeSection";
 import Projects from "../ProjectsSection/ProjectsSection";
 import ContactSection from "../ContactSection/ContactSection";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
+import NextPageButton from "../NextPageButton/NextPageButton";
 
 const RightColumn = () => {
   const location = useLocation();
@@ -27,8 +28,11 @@ const RightColumn = () => {
       <div className="md:hidden sm:hidden">
         <MobileNavbar />
       </div>
-      <div className="max-h-screen overflow-y-scroll overflow-hidden">
+      <div className="max-h-screen overflow-y-scroll overflow-hidden flex-grow pb-24">
         {content}
+      </div>
+      <div className="flex justify-center pt-auto">
+        <NextPageButton onClick="" buttonLabel="Next Page" />
       </div>
     </div>
   );
