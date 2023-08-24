@@ -36,7 +36,7 @@ const RightColumn = () => {
         {content}
       </div>
       <div className="flex justify-center pt-auto">
-        <NextPageButton nextPage={nextPage}/>
+        <NextPageButton nextPage={nextPage} />
       </div>
     </div>
   );

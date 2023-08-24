@@ -13,7 +13,9 @@ const ProjectTile = (props) => {
           ></img>
         </div>
         <h1 className="text-center font-bold pt-2">{props.projectTitle}</h1>
-        <p className="h-48 pl-2 pr-2 pt-2 text-green-600 text-sm overflow-auto">{props.projectDescription}</p>
+        <p className="h-48 pl-2 pr-2 pt-2 text-green-600 text-sm overflow-auto">
+          {props.projectDescription}
+        </p>
         <div className="pb-1 pt-1 flex flex-row gap-3 justify-center">
           <a
             href={props.projectGithubUrl}
