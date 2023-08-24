@@ -9,18 +9,22 @@ import NextPageButton from "../NextPageButton/NextPageButton";
 
 const RightColumn = () => {
   const location = useLocation();
-
+  let nextPage = location.pathname;
   const currentPath = location.pathname;
   let content = null;
 
   if (currentPath === "/") {
     content = <Home />;
+    nextPage = "/aboutme";
   } else if (currentPath === "/aboutme") {
     content = <AboutMeSection />;
+    nextPage = "/projects";
   } else if (currentPath === "/projects") {
     content = <Projects />;
+    nextPage = "/contact";
   } else if (currentPath === "/contact") {
     content = <ContactSection />;
+    nextPage = "/";
   }
 
   return (
@@ -32,7 +36,7 @@ const RightColumn = () => {
         {content}
       </div>
       <div className="flex justify-center pt-auto">
-        <NextPageButton onClick="" buttonLabel="Next Page" />
+        <NextPageButton nextPage={nextPage}/>
       </div>
     </div>
   );
