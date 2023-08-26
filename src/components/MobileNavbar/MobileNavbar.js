@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 
 const MobileNavbar = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black font-mono font-medium Consolas">
       <div className="pt-16 flex flex-col items-center justify-center overflow-hidden">
         <img
           className="h-64 w-64 border-4 border-green-600 rounded-full"
@@ -14,6 +14,9 @@ const MobileNavbar = () => {
           src={ProfilePicture}
         ></img>
       </div>
+      <h1 className="text-2xl text-center text-green-600 pt-6">
+        Lance Althouse
+      </h1>
       <Navbar />
       <div className="pt-16 pb-16 flex flex-row gap-6 items-center justify-center">
         <a
