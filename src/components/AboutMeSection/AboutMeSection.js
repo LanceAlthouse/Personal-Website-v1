@@ -4,7 +4,7 @@ import ResumeFile from "../../assets/files/Lance_Althouse_Resume.pdf";
 
 const AboutMeSection = () => {
   return (
-    <div className="font-mono font-medium Consolas grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-5 h-[850px] xl:h-auto">
+    <div className="font-mono font-medium Consolas grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-5 xl:h-auto">
       <div className="p-16 text-2xl text-green-600 xl:col-span-3">
         <p>
           I am currently a junior pursuing a major in Software Engineering at
