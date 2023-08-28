@@ -4,8 +4,8 @@ import ResumeFile from "../../assets/files/Lance_Althouse_Resume.pdf";
 
 const AboutMeSection = () => {
   return (
-    <div className="font-mono font-medium Consolas grid grid-cols-5">
-      <div className="p-16 text-2xl text-green-600 col-span-3">
+    <div className="font-mono font-medium Consolas grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-5 h-[850px] xl:h-auto">
+      <div className="p-16 text-2xl text-green-600 xl:col-span-3">
         <p>
           I am currently a junior pursuing a major in Software Engineering at
           the University of Nebraska-Lincoln. The programming languages I am
@@ -23,7 +23,7 @@ const AboutMeSection = () => {
           meaningful contributions to the digital world.
         </p>
       </div>
-      <div className="p-16 col-span-2 flex flex-col justify-center items-center">
+      <div className="p-16 xl:col-span-2 flex flex-col justify-center items-center">
         <img
           src={ResumeIcon}
           alt="resume_icon"
