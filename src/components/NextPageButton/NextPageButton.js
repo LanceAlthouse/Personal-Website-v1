@@ -7,7 +7,7 @@ const NextPageButton = (nextPage) => {
   return (
     <NavLink to={nextPage}>
       <button
-        className="bg-gray-600 hover:bg-green-600 rounded-full py-3 px-3 animate-bounce opacity-50 hover:opacity-100 shadow-lg shadow-black"
+        className="bg-gray-600 hover:bg-green-600 rounded-full py-3 px-3 animate-bounce opacity-90 hover:opacity-100 shadow-lg shadow-black"
         title="Next Page"
       >
         <img src={NextPageIcon} alt="next-page-icon"></img>
