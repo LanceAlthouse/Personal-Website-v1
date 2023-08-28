@@ -9,7 +9,7 @@ const AboutMeSection = () => {
         <p>
           I am currently a junior pursuing a major in Software Engineering at
           the University of Nebraska-Lincoln. The programming languages I am
-          efficient in include React, Java, Python, and more, I enjoy
+          proficient in include React, Java, Python, and more, I enjoy
           problem-solving and am eager to contribute to creating accessible
           software for the community. This is exactly why I aspire to become a
           software engineer.
