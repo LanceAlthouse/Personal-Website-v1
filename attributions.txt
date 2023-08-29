@@ -3,3 +3,6 @@
 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/terminal" title="terminal icons">Terminal icons created by Freepik - Flaticon</a>
 <a href="https://www.freepik.com/icon/resume_942799#fromView=search&term=resume&page=1&position=0">Icon by Freepik</a>
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Ilham Fitrotul Hayat - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
