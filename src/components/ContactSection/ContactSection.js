@@ -36,7 +36,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="font-mono font-medium Consolas pt-48">
+    <div className="font-mono font-medium Consolas pt-16">
       <h1 className="text-3xl font-bold text-green-600 text-center underline">
         Contact Me
       </h1>

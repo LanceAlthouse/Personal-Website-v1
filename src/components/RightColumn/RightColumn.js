@@ -1,4 +1,4 @@
-import { React} from "react";
+import { React } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "../Home/Home";
 import AboutMeSection from "../AboutMeSection/AboutMeSection";
@@ -38,7 +38,7 @@ const RightColumn = () => {
       <div
         className={`flex flex-col justify-center items-center pr-4 ${
           currentPath === "/projects" ? "pt-6" : "pt-auto"
-        }`}
+        } fixed bottom-8 right-8 z-10`}
       >
         <NextPageButton nextPage={nextPage} />
       </div>
