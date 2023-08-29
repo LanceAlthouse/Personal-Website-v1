@@ -46,7 +46,7 @@ const LeftColumn = () => {
           ></img>
         </a>
       </div>
-      <div className="pt-52 text-center">
+      <div className="pt-52 sm:pt-16 md:pt-16 lg:pt-16 text-center">
         <p className="text-white">&#169; 2023 Lance Althouse</p>
       </div>
     </div>
