@@ -10,7 +10,7 @@ const Navbar = () => {
     <ul className="pt-8 outline-2 outline-green-600 grid grid-cols-1 grid-rows-4 gap-5 text-center text-2xl text-white font-mono font-medium Consolas">
       <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/" && (
-          <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
+          <span className="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
         <NavLink
           to="/"
@@ -21,7 +21,7 @@ const Navbar = () => {
       </li>
       <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/aboutme" && (
-          <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
+          <span className="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
         <NavLink
           to="/aboutme"
@@ -34,7 +34,7 @@ const Navbar = () => {
       </li>
       <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/projects" && (
-          <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
+          <span className="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
         <NavLink
           to="/projects"
@@ -47,7 +47,7 @@ const Navbar = () => {
       </li>
       <li className=" hover:text-green-600 ease-in duration-300 hover:scale-110">
         {currentPath === "/contact" && (
-          <span class="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
+          <span className="cursor inline-block w-2 h-5 bg-green-600 animate-pulse"></span>
         )}
         <NavLink
           to="/contact"
