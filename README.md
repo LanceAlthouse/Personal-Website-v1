@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Personal Website Version 1.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the source code repository for the first version of my personal website! This project showcases my web development skills, utilizing the React and TailwindCSS frameworks.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+In this repository, you will find the code that powers my personal website. This README helps in understanding this project and the technologies used to build it. If you find any bugs or issues with the site please document them in the issue tracker on this repo.
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### React (Reusable Components)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The main part of this website is made using the React framework. React allows for the creation of reusable UI elements by creating components that update when data changes. It utilizes a virtual DOM to make changes to the actual DOM and manipulate data.
 
-### `npm test`
+### TailwindCSS (Styling)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The aesthetic of my website was made using TailwindCSS. This CSS framework makes the styling process very quick and easy, offering lots of pre-designed classes that help developers make web pages. TailwindCSS and React go well together as React uses JSX and you can edit styles directly inside it using classNames.
 
-### `npm run build`
+## Deployment Of Website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I used Cloudflare pages to deploy my website making it very quick and easy to do so. I prefer Cloudflare over a lot of other technologies as I am used to it and utilize it for many tunnels and web applications.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation On Local System
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install my website on your local device, please follow these steps:
 
-### `npm run eject`
+1. **Clone Repository**: Clone this repository to your local machine using the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   git clone https://github.com/Lancealot4567/personal-website.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigate to Directory**: Move to the main directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   cd personal-website-v1
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install Dependencies**: Install all dependencies using your favorite package manager. In my case, I use npm:
 
-## Learn More
+   ```
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Start the Development Server**: Launch the development server to see the website popup in your browser:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```
+   npm start
+   ```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
