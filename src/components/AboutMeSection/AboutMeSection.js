@@ -9,10 +9,10 @@ const AboutMeSection = () => {
         <p>
           I am currently a junior pursuing a major in Software Engineering at
           the University of Nebraska-Lincoln. The programming languages I am
-          proficient in include React, Java, Python, and more, I enjoy
-          problem-solving and am eager to contribute to creating accessible
-          software for the community. This is exactly why I aspire to become a
-          software engineer.
+          proficient in include React, Java, Python, and more. I aspire to
+          become a software engineer so that I can contribute to and create
+          accessible software for the community. I also love solving problems,
+          something I am able to do as a software engineer.
         </p>
         <p className="pt-16">
           Beyond my academic interests, I'm an enthusiast in the world of 3D

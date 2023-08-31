@@ -4,7 +4,7 @@ import ProjectTile from "../ProjectTile/ProjectTile";
 const Projects = () => {
   return (
     <div className="font-mono font-medium Consolas">
-      <div className="flex flex-wrap items-center justify-center grid-cols-5 grid-rows-5 gap-16 p-8 h-[750px]">
+      <div className="flex flex-wrap items-center justify-center grid-cols-5 grid-rows-5 gap-16 p-8 pt-16">
         <ProjectTile
           projectImgUrl="https://imgur.com/0kv2TkZ.png"
           projectGithubUrl="https://github.com/isaiahstone21/Expense-Splitter"
