@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "../../assets/images/profile_picture_circular.png";
+import ProfilePicture from "../../assets/images/profile_picture_circular.avif";
 import LinkedInLogo from "../../assets/images/linkedin_logo.png";
 import GithubLogo from "../../assets/images/github_logo.png";
 import Navbar from "../Navbar/Navbar";
