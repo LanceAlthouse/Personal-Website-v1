@@ -1,5 +1,5 @@
 import { React } from "react";
-import GithubLogo from "../../assets/images/github_logo.png";
+import GithubLogo from "../../assets/images/github_logo.avif";
 
 const ProjectTile = (props) => {
   return (

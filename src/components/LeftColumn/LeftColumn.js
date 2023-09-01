@@ -1,7 +1,7 @@
 import React from "react";
 import ProfilePicture from "../../assets/images/profile_picture_circular.avif";
-import LinkedInLogo from "../../assets/images/linkedin_logo.png";
-import GithubLogo from "../../assets/images/github_logo.png";
+import LinkedInLogo from "../../assets/images/linkedin_logo.avif";
+import GithubLogo from "../../assets/images/github_logo.avif";
 import Navbar from "../Navbar/Navbar";
 
 const LeftColumn = () => {

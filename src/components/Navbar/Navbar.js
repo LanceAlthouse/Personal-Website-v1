@@ -1,5 +1,4 @@
 import React from "react";
-//import { Link, Element, scroll, Button } from "react-scroll";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {

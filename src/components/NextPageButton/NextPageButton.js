@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import NextPageIcon from "../../assets/images/nextpage_icon.png";
+import NextPageIcon from "../../assets/images/nextpage_icon.avif";
 
 const NextPageButton = (nextPage) => {
   nextPage = nextPage.nextPage;

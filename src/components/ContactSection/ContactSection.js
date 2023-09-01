@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PersonIcon from "../../assets/images/person_icon.png";
-import EmailIcon from "../../assets/images/email_icon.png";
-import MessageIcon from "../../assets/images/message_icon.png";
+import PersonIcon from "../../assets/images/person_icon.avif";
+import EmailIcon from "../../assets/images/email_icon.avif";
+import MessageIcon from "../../assets/images/message_icon.avif";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
