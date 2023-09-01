@@ -26,7 +26,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-      await axios.post("/api/send-email", {
+      await axios.post("https://personal-website-ochre-phi.vercel.app//api/send-email", {
         subject: `Contact Form Submission from ${email}`,
         text: `${message}`,
       });
