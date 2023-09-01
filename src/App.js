@@ -2,6 +2,7 @@ import "./App.css";
 import LeftColumn from "./components/LeftColumn/LeftColumn";
 import RightColumn from "./components/RightColumn/RightColumn";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           </div>
         </div>
       </div>
+      <Analytics/>
     </Router>
+    
   );
 }
 
