@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import PersonIcon from "../../assets/images/person_icon.avif";
 import EmailIcon from "../../assets/images/email_icon.avif";
 import MessageIcon from "../../assets/images/message_icon.avif";
@@ -21,18 +22,26 @@ const ContactSection = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Need to implement a way to send the form data to my email
 
-    setFormSubmission(
-      `Thank you for your submission ${name}, I will get back to you as soon as possible.`
-    );
-    console.log("Form submitted:", { name, email, message });
-    // Reset the form
-    setName("");
-    setEmail("");
-    setMessage("");
+    try {
+      await axios.post("http://localhost:3001/send-email", {
+        subject: `Contact Form Submission from ${email}`,
+        text: `${message}`,
+      });
+
+      setFormSubmission(
+        `Thank you for your submission ${name}, I will get back to you as soon as possible.`
+      );
+      console.log("Form submitted:", { name, email, message });
+
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   return (
