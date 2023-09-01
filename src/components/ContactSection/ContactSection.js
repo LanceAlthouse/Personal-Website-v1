@@ -26,7 +26,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3001/send-email", {
+      await axios.post("/api/send-email", {
         subject: `Contact Form Submission from ${email}`,
         text: `${message}`,
       });
