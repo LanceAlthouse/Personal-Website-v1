@@ -32,7 +32,7 @@ const ContactSection = () => {
       });
 
       setFormSubmission(
-        `Thank you for your submission ${name}, I will get back to you as soon as possible.`
+        `Thank you for your email ${name}, I will get back to you as soon as possible.`
       );
       console.log("Form submitted:", { name, email, message });
 
@@ -41,6 +41,9 @@ const ContactSection = () => {
       setMessage("");
     } catch (error) {
       console.error("Error sending email:", error);
+      setFormSubmission(
+        "There was an error sending your email, the server may be down, please try again later."
+      );
     }
   };
 
