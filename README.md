@@ -18,7 +18,7 @@ The aesthetic of my website was made using TailwindCSS. This CSS framework makes
 
 ## Deployment Of Website
 
-I used Cloudflare pages to deploy my website making it very quick and easy to do so. I prefer Cloudflare over a lot of other technologies as I am used to it and utilize it for many tunnels and web applications.
+I used Vercel to deploy my website, making it very quick and easy to set up the React server. I also set up the serverless function that my website uses to send emails.
 
 ## Installation On Local System
 
