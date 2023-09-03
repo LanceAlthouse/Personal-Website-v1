@@ -19,7 +19,7 @@ const limiter = rateLimit({
   windowMs: 86400,
   max: 2,
   handler: (req, res) => {
-    res.status(429).json({ message: "Rate limit exceeded" });
+    res.status(429).json({ message: "Email rate limit exceeded" });
   },
 });
 

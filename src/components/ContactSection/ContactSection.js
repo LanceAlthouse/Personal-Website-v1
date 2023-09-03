@@ -9,6 +9,8 @@ const ContactSection = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [formSubmission, setFormSubmission] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [cooldown, setCooldown] = useState(0);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -22,10 +24,17 @@ const ContactSection = () => {
     setMessage(e.target.value);
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (isSubmitting || cooldown > 0) {
+      return;
+    }
+
     try {
+      setIsSubmitting(true);
+
       await axios.post("api/sendEmail", {
         subject: `Contact Form Submission from ${email}`,
         text: `${message}`,
@@ -34,18 +43,44 @@ const ContactSection = () => {
       setFormSubmission(
         `Thank you for your email ${name}, I will get back to you as soon as possible.`
       );
-      console.log("Form submitted:", { name, email, message });
 
       setName("");
       setEmail("");
       setMessage("");
+      setCooldown(10);
+
+      setTimeout(() => {
+        setCooldown(0);
+        setIsSubmitting(false);
+      }, 10000);
+
+      console.log("Form submitted:", { name, email, message });
     } catch (error) {
-      console.error("Error sending email:", error);
-      setFormSubmission(
-        "There was an error sending your email, the server may be down, please try again later."
-      );
+      if (error.response && error.response.status === 429) {
+        setFormSubmission(
+          "You have reached the max amount of emails to be sent. Please try again tomorrow."
+        );
+      } else {
+        console.error("Error sending email:", error);
+        setFormSubmission(
+          "There was an error sending your email, the server may be down, please try again later."
+        );
+      }
+      setIsSubmitting(false);
     }
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (cooldown > 0) {
+        setCooldown(cooldown - 1);
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [cooldown]);
 
   return (
     <div className="font-mono font-medium Consolas pt-16">
