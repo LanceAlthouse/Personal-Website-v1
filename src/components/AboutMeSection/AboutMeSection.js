@@ -1,5 +1,5 @@
 import { React } from "react";
-import ResumeIcon from "../../assets/images/resume_icon.png";
+import ResumeIcon from "../../assets/images/resume_icon.avif";
 import ResumeFile from "../../assets/files/Lance_Althouse_Resume.pdf";
 
 const AboutMeSection = () => {
@@ -27,7 +27,7 @@ const AboutMeSection = () => {
         <img
           src={ResumeIcon}
           alt="resume_icon"
-          className="w-40 h-40 mb-8 ml-6"
+          className="w-40 h-40 mb-8 opacity-70"
         />
         <a
           href={ResumeFile}

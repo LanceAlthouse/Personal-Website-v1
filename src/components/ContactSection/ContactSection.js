@@ -63,7 +63,7 @@ const ContactSection = () => {
       } else {
         console.error("Error sending email:", error);
         setFormSubmission(
-          "There was an error sending your email, the server may be down, please try again later."
+          "There was an error sending your email, the server may be down, please contact me on Linkedin instead."
         );
       }
       setIsSubmitting(false);
