@@ -24,7 +24,6 @@ const ContactSection = () => {
     setMessage(e.target.value);
   };
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -63,7 +62,7 @@ const ContactSection = () => {
       } else {
         console.error("Error sending email:", error);
         setFormSubmission(
-          "There was an error sending your email, the server may be down, please contact me on Linkedin instead."
+          "There was an error sending your email, the server may be down, please contact me by email or on LinkedIn."
         );
       }
       setIsSubmitting(false);
@@ -83,72 +82,90 @@ const ContactSection = () => {
   }, [cooldown]);
 
   return (
-    <div className="font-mono font-medium Consolas pt-16">
-      <h1 className="text-3xl font-bold text-green-600 text-center underline">
-        Contact Me
-      </h1>
-      <form
-        className="pt-4 space-y-4 max-w-xl mx-auto text-white"
-        onSubmit={handleSubmit}
-      >
-        <div className="pt-4 flex h-16">
-          <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
-            <img src={PersonIcon} alt="user icon" className="w-6 h-6"></img>
-          </span>
-          <input
-            type="text"
-            id="name"
-            className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
-            value={name}
-            autoComplete="name"
-            placeholder="Name"
-            onChange={handleNameChange}
-            required
-          />
+    <div className="font-mono font-medium Consolas flex flex-col justify-center items-center pt-32 pb-6">
+      <div className="rounded-2xl w-full sm:w-[600px] h-[500px] text-white px-[1px] py-[1px] bg-gradient-to-r from-green-600 to-fuchsia-900 shadow-lg shadow-black">
+        <div className="rounded-2xl w-full h-full bg-zinc-950 p-3 sm:p-6 overflow-hidden">
+          <div className="pt-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-green-600 text-center underline">
+              Contact Me
+            </h1>
+            <form
+              className="pt-4 sm:pt-6 space-y-4 max-w-xl mx-auto text-white"
+              onSubmit={handleSubmit}
+            >
+              <div className="pt-4 flex h-16">
+                <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
+                  <img
+                    src={PersonIcon}
+                    alt="user icon"
+                    className="w-6 h-6"
+                  ></img>
+                </span>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
+                  value={name}
+                  autoComplete="name"
+                  placeholder="Name"
+                  onChange={handleNameChange}
+                  required
+                />
+              </div>
+              <div className="pt-4 flex h-16">
+                <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
+                  <img
+                    src={EmailIcon}
+                    alt="email icon"
+                    className="w-6 h-6"
+                  ></img>
+                </span>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
+                  value={email}
+                  autoComplete="email"
+                  placeholder="Email"
+                  onChange={handleEmailChange}
+                  required
+                />
+              </div>
+              <div className="pt-4 flex h-32">
+                <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
+                  <img
+                    src={MessageIcon}
+                    alt="message icon"
+                    className="w-6 h-6"
+                  ></img>
+                </span>
+                <textarea
+                  id="message"
+                  className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
+                  value={message}
+                  autoComplete="off"
+                  placeholder="Write your message here..."
+                  onChange={handleMessageChange}
+                  rows={6}
+                  style={{ resize: "none" }}
+                  required
+                />
+              </div>
+              <div className="flex items-center justify-center pr-4">
+                <button
+                  type="submit"
+                  className="px-4 py-2 text-white bg-gray-600 rounded-lg hover:bg-green-600 hover:opacity-100 shadow-lg shadow-black"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div className="pt-4 flex h-16">
-          <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
-            <img src={EmailIcon} alt="email icon" className="w-6 h-6"></img>
-          </span>
-          <input
-            type="email"
-            id="email"
-            className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
-            value={email}
-            autoComplete="email"
-            placeholder="Email"
-            onChange={handleEmailChange}
-            required
-          />
-        </div>
-        <div className="pt-4 flex h-32">
-          <span className="bg-gray-800 rounded-l-lg w-14 flex justify-center items-center border border-l-gray-500 border-r-0 border-t-gray-500 border-b-gray-500">
-            <img src={MessageIcon} alt="message icon" className="w-6 h-6"></img>
-          </span>
-          <textarea
-            id="message"
-            className="w-full px-4 py-2 rounded-r-lg border border-l-0 border-r-gray-500 border-t-gray-500 border-b-gray-500 bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 shadow-lg shadow-black"
-            value={message}
-            autoComplete="off"
-            placeholder="Write your message here..."
-            onChange={handleMessageChange}
-            rows={6}
-            style={{ resize: "none" }}
-            required
-          />
-        </div>
-        <div className="flex items-center justify-center pr-4">
-          <button
-            type="submit"
-            className="px-4 py-2 text-white bg-gray-600 rounded-lg hover:bg-green-600 hover:opacity-100 shadow-lg shadow-black"
-          >
-            Submit
-          </button>
-        </div>
-        <div className="text-center text-2xl pt-4 text-green-600">
+        <div className="text-center text-2xl pt-4 pb-4 text-green-600">
           {formSubmission}
         </div>
-      </form>
+      </div>
     </div>
   );
 };
