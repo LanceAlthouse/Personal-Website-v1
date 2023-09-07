@@ -6,6 +6,7 @@ import Projects from "../ProjectsSection/ProjectsSection";
 import ContactSection from "../ContactSection/ContactSection";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import NextPageButton from "../NextPageButton/NextPageButton";
+import Credits from "../CreditsSection/CreditsSection";
 
 const RightColumn = () => {
   const location = useLocation();
@@ -24,6 +25,9 @@ const RightColumn = () => {
     nextPage = "/contact";
   } else if (currentPath === "/contact") {
     content = <ContactSection />;
+    nextPage = "/credits";
+  } else {
+    content = <Credits />;
     nextPage = "/";
   }
 

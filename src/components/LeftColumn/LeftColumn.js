@@ -1,10 +1,13 @@
 import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import ProfilePicture from "../../assets/images/profile_picture_circular.avif";
 import LinkedInLogo from "../../assets/images/linkedin_logo.avif";
 import GithubLogo from "../../assets/images/github_logo.avif";
 import Navbar from "../Navbar/Navbar";
 
 const LeftColumn = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
   return (
     <div className="h-full flex flex-col items-center bg-zinc-950 font-mono font-medium Consolas">
       <div className="pt-10 flex justify-center items-center object-fill">
@@ -46,8 +49,17 @@ const LeftColumn = () => {
           ></img>
         </a>
       </div>
-      <div className="pt-52 sm:pt-16 md:pt-16 lg:pt-16 text-center">
-        <p className="text-white">&#169; 2023 Lance Althouse</p>
+      <div className="pt-52 sm:pt-16 md:pt-16 lg:pt-16 text-center text-white">
+        <p className="font-bold">&#169; 2023 Lance Althouse</p>
+        <NavLink to="/credits">
+          <p
+            className={`pl-2 ${
+              currentPath === "/credits" ? "text-green-600" : ""
+            }`}
+          >
+            Credits
+          </p>
+        </NavLink>
       </div>
     </div>
   );

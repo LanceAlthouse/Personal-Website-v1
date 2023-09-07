@@ -1,10 +1,13 @@
 import { React } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import ProfilePicture from "../../assets/images/profile_picture_circular.avif";
 import LinkedInLogo from "../../assets/images/linkedin_logo.avif";
 import GithubLogo from "../../assets/images/github_logo.avif";
 import Navbar from "../Navbar/Navbar";
 
 const MobileNavbar = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
   return (
     <div className="bg-black font-mono font-medium Consolas">
       <div className="pt-16 flex flex-col items-center justify-center overflow-hidden">
@@ -41,6 +44,18 @@ const MobileNavbar = () => {
             className="invert w-8 h-8 hover:scale-125 ease-in duration-300"
           ></img>
         </a>
+      </div>
+      <div className="sm:pt-16 md:pt-16 lg:pt-16 pb-4 text-center text-white">
+        <p className="font-bold">&#169; 2023 Lance Althouse</p>
+        <NavLink to="/credits">
+          <p
+            className={`pl-2 ${
+              currentPath === "/credits" ? "text-green-600" : ""
+            }`}
+          >
+            Credits
+          </p>
+        </NavLink>
       </div>
     </div>
   );
