@@ -39,7 +39,7 @@ const ProjectTile = (props) => {
       <div className="rounded-2xl w-full h-full bg-zinc-950 p-3 overflow-hidden">
         <div className="rounded-2xl bg-gradient-to-r from-green-600 to-fuchsia-900">
           <img
-            className="h-full w-full max-h-[200px] rounded-2xl p-[1px]"
+            className="min-h-[200px] w-auto max-h-[200px] rounded-2xl p-[1px]"
             src={props.projectImgUrl}
             alt="project-img"
           ></img>
@@ -51,7 +51,7 @@ const ProjectTile = (props) => {
           <div className={status}></div>
           <h2 className="pl-2 text-sm">{props.projectStatus}</h2>
         </div>
-        <p className="h-48 pl-2 pr-2 pt-2 pb-[0px] text-green-600 text-sm overflow-auto">
+        <p className="h-48 pl-2 pr-2 pt-2 pb-[0px] text-green-600 text-sm overflow-y-auto">
           {props.projectDescription}
         </p>
         {content}
