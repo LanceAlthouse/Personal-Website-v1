@@ -1,10 +1,11 @@
 import ExpenseSplitterImg from "../assets/images/expense_splitter_project_image.avif";
 import WorkInProgressImg from "../assets/images/work_in_progress_image.avif";
 import PersonalWebsiteImg from "../assets/images/personal_portfolio_image.avif";
+import MovieCatalogImg from "../assets/images/movie_catalog_project_image.avif";
 
 export const projectData = [
   {
-    projectImgUrl: WorkInProgressImg,
+    projectImgUrl: MovieCatalogImg,
     projectGithubUrl: "https://github.com/Lancealot4567/Movie-Catalog",
     projectTitle: "Movie Catalog Web App",
     projectStatus: "Work In Progress",
