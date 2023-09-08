@@ -1,6 +1,6 @@
 # Personal Website Version 1.0
 
-Welcome to the source code repository for the first version of my personal website! This project showcases my web development skills, utilizing the React and TailwindCSS frameworks.
+Welcome to the source code repository for the first version of my personal website! This project showcases my web development skills, utilizing the React and TailwindCSS frameworks. **Feel free to use this as a template or use code from this repository but please credit me by having a link to my website somewhere in your project.**
 
 ## Introduction
 
