@@ -2,8 +2,9 @@ import { React } from "react";
 
 const CreditsSection = () => {
   return (
-    <div className="font-mono font-medium Consolas flex flex-col">
+    <div className="font-mono font-medium Consolas flex items-center justify-center">
       <div className="p-16 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-green-600 xl:col-span-3">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-center underline">Credits</h1>
         <ul>
           <li>
             <a
