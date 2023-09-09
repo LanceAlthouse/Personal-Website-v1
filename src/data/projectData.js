@@ -1,7 +1,10 @@
 import ExpenseSplitterImg from "../assets/images/expense_splitter_project_image.avif";
-import WorkInProgressImg from "../assets/images/work_in_progress_image.avif";
 import PersonalWebsiteImg from "../assets/images/personal_portfolio_image.avif";
 import MovieCatalogImg from "../assets/images/movie_catalog_project_image.avif";
+import BurnPlanImg from "../assets/images/burn_plan_evaluation_project_image.avif";
+import SportsWeatherImg from "../assets/images/sports_weather_project_image.avif";
+import TravelPlannerImg from "../assets/images/travel_planner_project_image.avif";
+//import WorkInProgressImg from "../assets/images/work_in_progress_image.avif";
 
 export const projectData = [
   {
@@ -26,27 +29,27 @@ export const projectData = [
     projectTitle: "Expense Splitter Web App",
     projectStatus: "Completed",
     projectDescription:
-      "Collaborated with one teammate to create an expense-sharing web application using Flask, Python, JS, and HTML/CSS, helping to simplify cost distribution among groups.",
+      "I engaged in a collaborative effort with a single teammate to construct an expense-sharing web application. This project was created using Flask, a Python web framework, and incorporated JavaScript, HTML, and CSS. The primary objective was to simplify making cost allocations within group settings.",
   },
   {
-    projectImgUrl: WorkInProgressImg,
+    projectImgUrl: SportsWeatherImg,
     projectTitle: "Sports Weather App",
     projectStatus: "Completed",
     projectDescription:
-      "Built a JavaFX-based sports weather application, enhancing my Java development and UI design skills while working effectively in a team of five.",
+      "I worked collaboratively with a team of five individuals to develop a JavaFX-based sports weather application that is directly integrated with the OpenWeather API. This project significantly contributed to my proficiency in Java programming, UI design, and teamwork skills.",
   },
   {
-    projectImgUrl: WorkInProgressImg,
+    projectImgUrl: TravelPlannerImg,
     projectTitle: "Travel Planner App",
     projectStatus: "Completed",
     projectDescription:
-      "Created a Python application for travel planning using Kivy frontend, strengthening my Python skills and gaining experience in developing user-friendly interfaces in a team of four.",
+      "Developed a Python application for travel planning, utilizing Kivy for the frontend and MySQL for the backend. This project helped me enhance my Python skills and gain valuable experience in collaborating with a team of four to create user-friendly interfaces",
   },
   {
-    projectImgUrl: WorkInProgressImg,
+    projectImgUrl: BurnPlanImg,
     projectTitle: "Burnplan Evaluation App",
     projectStatus: "Completed",
     projectDescription:
-      "Developed a CLI Java application for burn plan evaluation, improving my Java skills and proficiency in collaborative software development within a team of four.",
+      "Developed a CLI Java application for burn plan evaluation, utilizing an external weather API, which significantly improved my Java programming skills. This project allowed me to enhance my proficiency in collaborative software development within a team of four.",
   },
 ];
