@@ -23,7 +23,7 @@ const LeftColumn = () => {
         Lance Althouse
       </h1>
       <Navbar />
-      <div className="pt-16 flex flex-row gap-6">
+      <div className="pt-12 flex flex-row gap-6">
         <a
           href="https://github.com/Lancealot4567"
           target="_blank"
@@ -49,7 +49,7 @@ const LeftColumn = () => {
           ></img>
         </a>
       </div>
-      <div className="pt-52 sm:pt-16 md:pt-16 lg:pt-16 text-center text-white">
+      <div className="pt-52 sm:pt-12 md:pt-12 lg:pt-12 text-center text-white">
         <p className="font-bold">&#169; 2023 Lance Althouse</p>
         <NavLink to="/credits">
           <p
