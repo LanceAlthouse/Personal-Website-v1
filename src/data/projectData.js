@@ -17,7 +17,7 @@ export const projectData = [
   {
     projectImgUrl: PersonalWebsiteImg,
     projectGithubUrl: "https://github.com/Lancealot4567/Personal-Website",
-    projectTitle: "Personal Portfolio Website",
+    projectTitle: "Personal Website",
     projectStatus: "Work In Progress",
     projectDescription:
       "My personal portfolio website is a dynamic web application built using React.js, JavaScript, and TailwindCSS. It serves as an online showcase of my skills, projects, and accomplishments. It is constantly being updated and improved as I develop new ideas.",

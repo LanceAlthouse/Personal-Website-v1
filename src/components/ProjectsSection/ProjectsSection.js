@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <div className="font-mono font-medium Consolas">
-      <div className="flex flex-wrap items-center justify-center grid-cols-5 grid-rows-5 gap-16 p-8 pt-16">
+      <div className="flex flex-wrap items-center justify-center grid-cols-5 grid-rows-5 gap-16 p-8 pt-10">
         {projectTiles}
       </div>
     </div>

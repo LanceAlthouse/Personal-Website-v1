@@ -82,7 +82,7 @@ const ContactSection = () => {
   }, [cooldown]);
 
   return (
-    <div className="font-mono font-medium Consolas flex flex-col justify-center items-center pt-32 pb-6">
+    <div className="font-mono font-medium Consolas flex flex-col justify-center items-center pt-32 sm:pt-10 md:pt-10 lg:pt-10 pb-4">
       <div className="rounded-2xl w-full sm:w-[600px] h-[500px] text-white px-[1px] py-[1px] bg-gradient-to-r from-green-600 to-fuchsia-900 shadow-lg shadow-black">
         <div className="rounded-2xl w-full h-full bg-zinc-950 p-3 sm:p-6 overflow-hidden">
           <div className="pt-4">
