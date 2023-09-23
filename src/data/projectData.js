@@ -9,7 +9,6 @@ import TravelPlannerImg from "../assets/images/travel_planner_project_image.avif
 export const projectData = [
   {
     projectImgUrl: MovieCatalogImg,
-    projectGithubUrl: "https://github.com/Lancealot4567/Movie-Catalog",
     projectTitle: "Movie Catalog Web App",
     projectStatus: "Work In Progress",
     projectDescription:
