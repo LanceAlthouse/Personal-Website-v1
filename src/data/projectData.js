@@ -16,7 +16,7 @@ export const projectData = [
   },
   {
     projectImgUrl: PersonalWebsiteImg,
-    projectGithubUrl: "https://github.com/Lancealot4567/Personal-Website",
+    projectGithubUrl: "https://github.com/LanceAlthouse/Personal-Website",
     projectTitle: "Personal Website",
     projectStatus: "Work In Progress",
     projectDescription:
@@ -24,7 +24,7 @@ export const projectData = [
   },
   {
     projectImgUrl: ExpenseSplitterImg,
-    projectGithubUrl: "https://github.com/Lancealot4567/Expense-Splitter",
+    projectGithubUrl: "https://github.com/LanceAlthouse/Expense-Splitter",
     projectTitle: "Expense Splitter Web App",
     projectStatus: "Completed",
     projectDescription:

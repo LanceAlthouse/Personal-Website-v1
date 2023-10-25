@@ -23,7 +23,7 @@ const MobileNavbar = () => {
       <Navbar />
       <div className="pt-16 pb-16 flex flex-row gap-6 items-center justify-center">
         <a
-          href="https://github.com/Lancealot4567"
+          href="https://github.com/LanceAlthouse"
           target="_blank"
           rel="noopener noreferrer"
         >

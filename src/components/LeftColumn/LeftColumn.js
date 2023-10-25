@@ -25,7 +25,7 @@ const LeftColumn = () => {
       <Navbar />
       <div className="pt-12 flex flex-row gap-6">
         <a
-          href="https://github.com/Lancealot4567"
+          href="https://github.com/LanceAlthouse"
           target="_blank"
           rel="noopener noreferrer"
         >
